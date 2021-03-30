@@ -1,0 +1,40 @@
+Block Level Elements
+
+   <div> is a universal content divider...it is used to group similar html elements
+
+   <h1>-<h6> are heading tags
+
+   <p> is a text paragraph
+
+   <pre></pre> is for pre-formatted text (i think it keeps the newline characters)
+
+   <hr> is a horizontal line
+
+   Block Level Elements use the full width available
+        -if they're in <body> then they are the full webpage.
+        -if they're in another BLE, they are that element's width
+   Height is calculated based on contents
+
+Inline Elements
+
+    <a> tag --designed to create links.
+        often used with href --> <a href="http:www.google.com">Click here for google!</a>
+
+    <span>  it wraps a part of a text (so you can edit that section in other ways)
+
+    <button> - creates a button...text in between the tags is the button text
+
+    <b></b> makes text bold in between tags
+
+    <sub></sub> or <sup></sup>  makes text subscript
+
+Comments
+    <!-- Some Text -->
+    CTRL + SHIFT + /
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+CSS
+    External CSS
+        <link rel="stylesheet" href="style.css">
+               type                 actual url
+
+    Internal CSS
+        <style></style>   inside of head section
+
+    Inline CSS
+        put it inside the tag you're using ie:
+            <p style="blahblah"> some text </p>
+
+ID and Class
+
+
+    ID - a unique identifier
+
+        <h1 id="title">Good Morning</h1>
+
+    Class - an identifier that can have multiple items grouped under it
+
+        <h1 class="blue"> blahblah </h1>
+
+        an element can have two classes at once, ie:
+            <h1 class="blue bigText">    ...this element is class blue and class bigText
+
+CSS Basic Syntax
+
+    selector {property: value;}  --> h1 { color: red}
+
+        Selector - which HTML elements the style will be applied to
+        Can do more than one at once, ie
+
+            h1, p {color: red;}
+
+    Selector - can be an html element, an id, or a class
+
+        for id, use # ie #big{ font-size: 30px}
+        for class, use . ie .big {font-size: 30px}
+
+    Comments - /*   any text    */
+
+Adding Google Fonts:
+
+    Go to google fonts and select "add this style" on desired font
+
+    Into CSS add @import url(enterURLprovidedBYgoogle)
+
+    or add direct to html as a link:
+        <link rel="stylesheet" href="urlHERE">
+
+Colors:
+
+    by name: h1 {color: red}
+
+    by RGB: h1 {color: rgb(255,255,255) }
+
+    by RGBA: h1 {color: rbga(255,255,255,0.5) }  -->opacity is from 0 to 1 (0 is transparent)
+
+    by HEX: h1 {color: #FFFFFF}
+            -if both digits of RRGGBB are the same, you can shorten to RGB ie:
+                -#FF55BB is shortened to #F5B
+
+    by HSL- Hue Saturation Lightness -- I'm not using this but... color: hsl(0%,50%,100%)
+
+Borders:
+
+    h1 {border-style: dotted}
+
+    Frequently used styles:
+        -dotted, dashed, solid, double, groove, ridge, inset, outset
+
+    Other attributes:
+        border-color, border-width
+
+    h1{ border: 25px, solid, red }
+        ***can define all at once using just "border"
+
+    One side only:
+        h1{ border-botton: 5 px, dotted, black }
+
+Absolute Units:
+
+    Pixels = px
+    cm, mm, in, pt, pc -- these aren't going to be accurate on screens...best for printing web pages
+
+Relative Units:
+
+    % - Use a percentage of the parent elements size
+    em - font size relative to the parent element font size
+        2em means font is twice the size of the parent font
+    rem - font size relative to the root element (<html>)
+
+    Viewport Units - percentage of viewable space
+        vw - 1% of screen width
+        vh - 1% of screen height
+
+        vmin - 1% of the smaller of height/width
+        vmax - 1% of the larger of height/width
+
+
+
+
+
+
+
+
+
+
+

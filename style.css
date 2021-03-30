@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+body{
+    background-color: #121212;
+    color: rgba(255,255,255,.8)
+}
+
+h1 {
+    font-family: "New Tegomin", sans-serif;
+}
+
+img{
+    width: 300px;
+}
