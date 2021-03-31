@@ -98,7 +98,68 @@ Relative Units:
         vmin - 1% of the smaller of height/width
         vmax - 1% of the larger of height/width
 
+Margin and Padding:
 
+    padding- internal space
+    margin - external space
+
+    1 value - padding to every side ie, padding: 10px (10 px to every side)
+
+    2 values - first to top/bottom, then to left/right
+
+    3 values - top, left/right, bottom
+
+    4 values - top, right, bottom, left ie, padding: 2px 4px 6px 8px
+
+    Margin:
+        auto centers
+            -centers the element if the element has a set width
+            -img{ margin: auto}
+
+    Padding:
+        can make an element stand out...padding increases overall size to accomodate the gap
+        gives a background to the element
+
+    Seems like you should combine margin and padding for effect
+
+Background
+    Color or Image (probably more options as well)
+
+    background-repeat
+        repeat...repeat to fill entire viewport
+        no-repeat...don't repeat
+        repeat-x...repeat across the x axis
+        repeat-y
+
+    background-attachment
+        fixed...background stays in place as you scroll
+        scroll...background moves
+
+    background-size: <num>%
+        changes the size of the image by <num> %
+
+Positioning
+    position: absolute
+        absolute pulls an element out of the plane of the normal flow elements
+
+        absolute elements will have height and width auto set to the h and w of the content
+            To change the element to stretch the entire way, do the the following:
+                -set an h or w value, then set left and right or top and bottom to 0, ie:
+                    .child {
+                     position: absolute;
+                     width: 50px;
+                     background-color: rgb(250, 135, 135);
+                     top: 0;
+                     bottom: 0;
+                    }  <--This makes a left side nav bar -->
+
+    position: relative
+        set to a position relative to it's original position on the page
+        this still moves it to a higher plane, but all other objects stay where they are
+            -basically, its spot is still reserved on the other plane
+
+    position: fixed
+        same as absolute, but stays still even during scrolling
 
 
 
