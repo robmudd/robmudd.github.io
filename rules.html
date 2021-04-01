@@ -32,7 +32,153 @@
     <a href="local_server.html">Server</a>
 </div>
 <div class="main">
-<h1>Sorry, this is under construction...this will have the game rules for Hanabi!</h1>
+    <div class="container-fluid"></div>
+        <h1>Learn to Play the Game!</h1>
+    <button type="button"  class="collapsible">The Goal</button>
+    <div class="content">
+        <p>Work as a team to complete one firework in each color.</p>
+        <p>A firework is complete when you play each value, in order, of that color.</p>
+        <figure>
+            <img src="images/gameboard/complete_white.png" alt="complete white firework" style="width: 600px">
+            <figcaption>a complete white firework</figcaption>
+        </figure>
+        <p>Completing all the fireworks is tough, but possible.</p>
+        <figure>
+            <img src="images/gameboard/perfect_score.png" alt="perfectscore" style="width: 600px">
+            <figcaption>a perfect scoreboard</figcaption>
+        </figure>
+    </div>
+    <button type="button"  class="collapsible">The Catch</button>
+    <div class="content">
+        <p>You can see everyone's tiles but your own.</p>
+        <p>Give clues to other players to help them decide which tiles to play.</p>
+        <p>Rely on their clues to make the right moves...but clues are limited.</p>
+        <figure>
+            <img src="images/gameboard/playing_board.png" alt="playing board" style="width: 600px">
+            <figcaption>the playing area</figcaption>
+        </figure>
+    </div>
+    <button type="button"  class="collapsible">The Turn</button>
+    <div class="content">
+        <p>On your turn, you have four options:</p>
+        <ol>
+            <li>
+                <p>Play a tile if you think it will score.
+                    <ul>
+                        <li>Colors can be completed in any order.</li>
+                        <li>Tile will score if it is next number for that color.</li>
+                    </ul>
+                </p>
+
+        <figure>
+            <img src="images/gameboard/whocanscore.png" style="width: 600px">
+            <figcaption>a white 4, or yellow 2 can score here.  So can a red, blue, or green 1</figcaption>
+        </figure>
+            </li>
+            <li>
+                <p>Discard a tile.
+                <ul>
+                <li>Discarding a tile puts it out of the game.</li>
+                <li>But discarding a tile earns the team an extra hint (maximum 10).</li>
+                </ul>
+                </p>
+            </li>
+            <li>
+                <p>Give a color hint to another player.
+            <ul>
+                <li>Select one tile in another players hand and click, hint color.</li>
+                <li>The player will see that tile's color, and which tiles in the hand have the same color</li>
+                <li>Remember, your hints are limited (more can be earned by discarding)</li>
+            </ul>
+                <figure>
+                    <img src="images/gameboard/giving_color.png" style="width: 600px">
+                    <figcaption>click the desired tile and select color from popup menu</figcaption>
+                </figure>
+                <figure>
+                <img src="images/gameboard/your_view_color.png" style="width: 600px">
+                <figcaption>shows hint for every tile with same color</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gameboard/other_view_color.png" style="width: 600px">
+                    <figcaption>the other player sees only the color value</figcaption>
+                </figure>
+            </p>
+            </li>
+            <li>
+            <p>Give a value hint to another player.
+            <ul>
+                <li>Same as color hint, but shows the tiles' value</li>
+            </ul>
+                <figure>
+                    <img src="images/gameboard/giving_value.png" style="width: 600px">
+                    <figcaption>click the tile and select value from popup menu</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gameboard/your_view_value.png" style="width: 600px">
+                    <figcaption>shows hint for every tile with same NUMBER value</figcaption>
+                </figure>
+        </ol>
+    </div>
+    <button type="button"  class="collapsible">The Info</button>
+    <div class="content">
+        <p>The info panel tells you what you need to know.</p>
+        <figure>
+            <img src="images/gameboard/info_panel.png" alt="info panel" style="width: 600px">
+            <figcaption>the playing area</figcaption>
+        </figure>
+        <p>Tiles Left: How many tiles are in the draw pile.</p>
+        <p>Hints Left: How many hints can you give (discard to earn more).</p>
+        <p>Fuses Left: Lose a fuse every time you try to score and fail.</p>
+        <ul><li>If you go into negative numbers, you lose the game!</li></ul>
+    </div>
+    <button type="button"  class="collapsible">The Endgame</button>
+    <div class="content">
+        <p>The game ends when:</p>
+        <ol>
+            <li>You score all 25 tiles...a perfect score!</li>
+            <figure>
+                <img src="images/gameboard/game_won.png" alt="a perfect game" style="width: 600px">
+                <figcaption>a perfect score</figcaption>
+            </figure>
+            <li>You run out of fuses and fail another score...you lose!</li>
+            <figure>
+                <img src="images/gameboard/fuses.png" alt="lost game fuses" style="width: 600px">
+                <figcaption>game lost</figcaption>
+            </figure>
+            <li>The draw pile runs out of tiles:</li>
+            <ul>
+                <li>When the last tile is drawn, every player gets one last turn.</li>
+                <figure>
+                    <img src="images/gameboard/out_of_moves.png" alt="out of tiles" style="width: 600px">
+                    <figcaption>out of tiles...one move left</figcaption>
+                </figure>
+                <li>Then the score is added up, one point for every scored tile.</li>
+                <li>Any score under 16 brings shame to your family.</li>
+            </ul>
+        </ol>
+        <h1 style="font-size: 68pt">Good Luck!</h1>
+
+    </div>
+
+
 </div>
+</div>
+
+<script >
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("activecoll");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
 </body>
 </html>

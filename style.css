@@ -5,6 +5,10 @@ body{
     color: rgba(255,255,255,.8)
 }
 
+figcaption {
+    font-size: 12pt;
+}
+
 h1 {
     font-family: "New Tegomin", sans-serif;
 }
