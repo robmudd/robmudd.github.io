@@ -36,22 +36,43 @@
 <div class="main">
 <h1>First, go to the <a href="https://www.oracle.com/java/technologies/javase-jdk16-downloads.html">Oracle JRE
     Download Page</a></h1>
-
-<h3><br>For MacOS, install the MacOS x64 Installer</h3>
-<p>Make sure to select the .dmg file (not the .tar file)</p>
-
-<img src="macos64.png" style="width: 900px">
-
-<h3><br>For Windows, install the Windows x64 Installer</h3>
-<p>Make sure to select the .exe file (not the .zip file)</p>
-
-<img src="images/windowsx64.png" style="width: 900px">
-
-<h3><br>Finally, double-click the downloaded file and follow the installation instructions, then download the game.</h3>
-
-<img src="images/install.png" style="width: 900px">
+    <button type="button"  class="collapsible">For MacOS</button>
+    <div class="content">
+        <p>For MacOS, install the MacOS x64 Installer</p>
+        <p>Make sure to select the .dmg file (not the .tar file)</p>
+        <img src="macos64.png" style="width: 900px">
+        <p>Double-click the downloaded file and follow the installation instructions.</p>
+        <img src="images/install.png" style="width: 900px">
+        <p>You're now ready to <a href="hanabi.html">download the game</a>.</p>
+    </div>
+    <button type="button"  class="collapsible">For Windows</button>
+    <div class="content">
+        <p>For Windows, install the Windows x64 Installer</p>
+        <p>Make sure to select the .exe file (not the .zip file)</p>
+        <img src="images/windowsx64.png" style="width: 900px">
+        <p>Double-click the downloaded file and follow the installation instructions.</p>
+        <img src="images/install.png" style="width: 900px">
+        <p>You're now ready to <a href="hanabi.html">download the game</a>.</p>
+    </div>
 
 </div>
+
+<script >
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("activecoll");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
 
 </body>
 </html>
