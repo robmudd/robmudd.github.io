@@ -161,6 +161,64 @@ Positioning
     position: fixed
         same as absolute, but stays still even during scrolling
 
+    position: sticky
+        -similar to fixed, but the heading stays at the top until the next heading pushes it aside
+        -must assign a top value (where does the bar stick to), ie:
+
+            .child {
+                position: sticky;
+                top: 0px <!--the child object will stick to the very top of the parent-->
+            }
+
+    Positioning properties:
+
+        only works if you've set a position (defaults to static, and properties won't work)
+
+        top - how far down from the top the item should be
+        bottom/left/right -- same concept
+            can be pixels or percentage (maybe others too?)
+
+Float
+    left
+    right
+    inherit (use same float value as parent container)
+
+    lets an element "float" to the left or right of it's parent container. Other items (ie text)
+    can fill in to the side of the element (kind of wrap around styling)
+
+    not legal with absolute positioning
+
+Clear:
+    used after an element is set to float.  Next element will account for that float, unless clear is used
+
+    clear: none  -- continue to account for float
+    clear: left  -- ignore any float left item
+    clear: right -- ignore any float right items
+    clear: both  -- don't account for previous items float value
+
+FLEXBOX!
+    Main axis - axis along which items will be placed by default
+    cross axis - perpendicular to the main axis
+    main start / main end - borders where the flexbox begins and ends
+    cross start / cross end - where the cross axis begins and ends
+    main size / cross size
+
+    set-up:
+        item must have display property set to "flex" (as opposed to block)
+            -this should be the parent container
+
+        <div class="flex-container">
+          <div class="flex-item">item 1</div>
+          <div class="flex-item">item 2</div>
+          <div class="flex-item">item 3</div>
+        </div>
+
+
+
+
+
+
+
 
 
 
